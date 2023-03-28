@@ -41,7 +41,7 @@ app.MapRazorPages();
 //dobavih
 app.UseHttpsRedirection();
 
-app.MapGet("product/get-all", async (IMediator _mediator) =>
+app.MapGet("product/getall", async (IMediator _mediator) =>
 {
     try
     {
@@ -55,7 +55,7 @@ app.MapGet("product/get-all", async (IMediator _mediator) =>
     }
 });
 
-app.MapGet("product/get-by-id", async (IMediator _mediator, int id) =>
+app.MapGet("product/getbyid", async (IMediator _mediator, int id) =>
 {
     try
     {
